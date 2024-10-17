@@ -13,6 +13,10 @@ app.get("/test", (req, res) => {
   return res.json("Server API is working");
 });
 
+app.get("/", (req, res) => {
+  res.send("welcome to QuestionsAPI");
+});
+
 app.listen(port, () => {
   console.log(`server is running at ${port}`);
 });
